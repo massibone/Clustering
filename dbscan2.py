@@ -115,6 +115,7 @@ def main():
     
     # Valuta la qualità del clustering
     silhouette, calinski = evaluate_clustering(X, clusters)
+    
     print(f"Silhouette Score: {silhouette}")
     print(f"Calinski-Harabasz Score: {calinski}")
 
