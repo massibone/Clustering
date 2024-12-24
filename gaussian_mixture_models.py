@@ -19,4 +19,4 @@ data2 = np.random.multivariate_normal(mean2, cov2, n_samples // 3)
 
 mean3 = [10, 10]
 cov3 = [[3, 2], [2, 3]]
-data3 = np.random.multivariate_normal(mean3, cov3, n_samples // 3
+data3 = np.random.multivariate_normal(mean3, cov3, n_samples // 3)
