@@ -11,9 +11,9 @@ def generate_dataset(
     noise: float = 0.05, 
     random_state: Optional[int] = None
 ) -> Tuple[np.ndarray, np.ndarray]:
-    """
+    '''
     Genera un dataset a forma di mezzaluna.
-    """
+    '''
     return make_moons(
         n_samples=n_samples, 
         noise=noise, 
