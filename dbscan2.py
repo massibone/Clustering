@@ -25,9 +25,9 @@ def perform_dbscan_clustering(
     eps: float = 0.2, 
     min_samples: int = 5
 ) -> np.ndarray:
-    """
+    '''
     Esegue il clustering DBSCAN sui dati.
-    """
+    '''
     # Preprocessing: standardizzazione dei dati
     X_scaled = StandardScaler().fit_transform(X)
     
@@ -38,9 +38,9 @@ def plot_dbscan_clusters(
     X: np.ndarray, 
     clusters: np.ndarray
 ):
-    """
+    '''
     Visualizza i risultati del clustering DBSCAN.
-    """
+    '''
     plt.figure(figsize=(12, 8))
     
     # Distingui punti di rumore
@@ -77,9 +77,9 @@ def evaluate_clustering(
     X: np.ndarray, 
     clusters: np.ndarray
 ) -> Tuple[float, float]:
-    """
+    '''
     Valuta la qualità del clustering.
-    """
+    '''
     # Esclude i punti di rumore
     mask = clusters != -1
     
