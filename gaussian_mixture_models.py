@@ -24,3 +24,8 @@ data3 = np.random.multivariate_normal(mean3, cov3, n_samples // 3)
 
 # Uniamo i dati
 data = np.concatenate((data1, data2, data3))
+# Creiamo un modello GMM con 3 componenti
+gmm = GaussianMixture(n_components=n_components)
+
+# Addestriamo il modello sui dati
+gmm.fit(data)
