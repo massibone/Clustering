@@ -29,3 +29,10 @@ gmm = GaussianMixture(n_components=n_components)
 
 # Addestriamo il modello sui dati
 gmm.fit(data)
+
+# Possiamo ora utilizzare il modello per fare previsioni
+# Ad esempio, possiamo calcolare la probabilità di appartenenza di un punto ai vari componenti
+point = np.array([2, 2])
+probabilities = gmm.predict_proba([point])
+print(probabilities)
+
