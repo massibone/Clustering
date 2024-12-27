@@ -4,7 +4,6 @@ from sklearn.mixture import GaussianMixture
 from sklearn.model_selection import GridSearchCV
 from typing import List, Tuple
 
-
 class GaussianMixtureAnalyzer:
     def __init__(self, n_components: int = 3, random_state: int = 42):
         """
