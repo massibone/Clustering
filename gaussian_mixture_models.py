@@ -35,4 +35,6 @@ gmm.fit(data)
 point = np.array([2, 2])
 probabilities = gmm.predict_proba([point])
 print(probabilities)
-
+# Possiamo anche visualizzare i dati e le componenti del modello
+plt.scatter(data[:, 0], data[:, 1], c=gmm.predict(data))
+plt.show()
