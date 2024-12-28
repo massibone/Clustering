@@ -18,3 +18,9 @@ class GaussianMixtureAnalyzer:
         self.n_components = n_components
         self.gmm = None
         self.data = None
+def generate_multivariate_data(self, 
+                                    means: List[List[float]], 
+                                    covs: List[List[List[float]]], 
+                                    samples_per_component: int = 333
+                                    ) -> np.ndarray:
+        """
