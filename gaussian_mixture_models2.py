@@ -24,3 +24,10 @@ def generate_multivariate_data(self,
                                     samples_per_component: int = 333
                                     ) -> np.ndarray:
         """
+
+        Genera dati multivariate gaussiani
+        
+        Args:
+            means: Lista di medie per ciascuna distribuzione
+            covs: Lista di matrici di covarianza
+            samples_per_component: Campioni per componente
