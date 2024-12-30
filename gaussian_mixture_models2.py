@@ -31,3 +31,21 @@ def generate_multivariate_data(self,
             means: Lista di medie per ciascuna distribuzione
             covs: Lista di matrici di covarianza
             samples_per_component: Campioni per componente
+
+          
+        Returns:
+            Array numpy con dati generati
+        """
+        np.random.seed(self.random_state)
+        
+        try:
+            data_components = [
+                np.random.multivariate_normal(mean, cov, samples_per_component)
+                for mean, cov in zip(means, covs)
+            ]
+            return np.concatenate(data_components)
+        except Exception as e:
+            print(f"Errore nella generazione dei dati: {e}")
+            raise
+
+ 
