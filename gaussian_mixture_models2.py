@@ -48,4 +48,16 @@ def generate_multivariate_data(self,
             print(f"Errore nella generazione dei dati: {e}")
             raise
 
+   def fit_gmm(self, data: np.ndarray) -> None:
+        """
+        Addestra il modello GMM
+        
+        Args:
+            data: Dati di addestramento
+        """
+        self.data = data
+        
+        # Ricerca griglia per numero ottimale di componenti
+        param_grid = {'n_components': range(1, 10)}
+        grid_search = GridSearchCV(
  
