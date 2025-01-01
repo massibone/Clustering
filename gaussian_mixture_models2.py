@@ -64,4 +64,7 @@ class GaussianMixtureAnalyzer:
             param_grid
         )
         grid_search.fit(data)
-        
+         # Selezione miglior modello
+        self.gmm = grid_search.best_estimator_
+        print(f"Numero ottimale di componenti: {self.gmm.n_components}")
+       
