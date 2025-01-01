@@ -67,4 +67,14 @@ class GaussianMixtureAnalyzer:
          # Selezione miglior modello
         self.gmm = grid_search.best_estimator_
         print(f"Numero ottimale di componenti: {self.gmm.n_components}")
-       
+  
+   def analyze_point(self, point: np.ndarray) -> Tuple[np.ndarray, int]:
+        """
+        Analizza la probabilità di appartenenza per un punto
+        
+        Args:
+            point: Punto da analizzare
+        
+        Returns:
+            Probabilità di appartenenza e cluster predetto
+        """     
