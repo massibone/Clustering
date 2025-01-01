@@ -60,4 +60,8 @@ class GaussianMixtureAnalyzer:
         # Ricerca griglia per numero ottimale di componenti
         param_grid = {'n_components': range(1, 10)}
         grid_search = GridSearchCV(
- 
+ GaussianMixture(random_state=self.random_state), 
+            param_grid
+        )
+        grid_search.fit(data)
+        
