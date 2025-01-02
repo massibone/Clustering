@@ -66,7 +66,7 @@ class GaussianMixtureAnalyzer:
         grid_search.fit(data)
          # Selezione miglior modello
         self.gmm = grid_search.best_estimator_
-        print(f"Numero ottimale di componenti: {self.gmm.n_components}")
+        print(f"Numero ottimale di componenti: {self.gmm.n_components}
   
    def analyze_point(self, point: np.ndarray) -> Tuple[np.ndarray, int]:
         """
@@ -77,4 +77,9 @@ class GaussianMixtureAnalyzer:
         
         Returns:
             Probabilità di appartenenza e cluster predetto
-        """     
+            
+        """  
+        
+        if self.gmm is None:
+            raise ValueError("Modello non ancora addestrato")
+        
