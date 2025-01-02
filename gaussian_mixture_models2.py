@@ -83,3 +83,11 @@ class GaussianMixtureAnalyzer:
         if self.gmm is None:
             raise ValueError("Modello non ancora addestrato")
         
+
+        probabilities = self.gmm.predict_proba(point.reshape(1, -1))
+        cluster = self.gmm.predict(point.reshape(1, -1))
+        
+        return probabilities[0], cluster[0]
+
+    def visualize_results(self) -> None:
+       
