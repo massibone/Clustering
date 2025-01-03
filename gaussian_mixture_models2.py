@@ -103,3 +103,10 @@ class GaussianMixtureAnalyzer:
             cmap='viridis'
         )
     
+        plt.colorbar(scatter)
+        plt.title('Risultati Clustering GMM')
+        plt.xlabel('Feature 1')
+        plt.ylabel('Feature 2')
+        plt.tight_layout()
+        plt.show()
+        
