@@ -1,4 +1,4 @@
-import numpy as np
+unimport numpy as np
 import matplotlib.pyplot as plt
 from sklearn.mixture import GaussianMixture
 from sklearn.model_selection import GridSearchCV
@@ -91,3 +91,15 @@ class GaussianMixtureAnalyzer:
 
     def visualize_results(self) -> None:
        
+            
+          """
+        Visualizza i risultati del clustering
+        """
+        plt.figure(figsize=(12, 8))
+        scatter = plt.scatter(
+            self.data[:, 0], 
+            self.data[:, 1], 
+            c=self.gmm.predict(self.data), 
+            cmap='viridis'
+        )
+    
