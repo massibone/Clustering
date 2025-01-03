@@ -109,4 +109,17 @@ class GaussianMixtureAnalyzer:
         plt.ylabel('Feature 2')
         plt.tight_layout()
         plt.show()
-        
+   def main():
+    # Definizione parametri
+    means = [
+        [0, 0],    # Prima distribuzione
+        [5, 5],    # Seconda distribuzione
+        [10, 10]   # Terza distribuzione
+    ]
+    
+    covs = [
+        [[1, 0.5], [0.5, 1]],      # Covarianza prima distribuzione
+        [[2, 1], [1, 2]],           # Covarianza seconda distribuzione
+        [[3, 2], [2, 3]]            # Covarianza terza distribuzione
+    ]
+    
