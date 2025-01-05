@@ -122,4 +122,11 @@ class GaussianMixtureAnalyzer:
         [[2, 1], [1, 2]],           # Covarianza seconda distribuzione
         [[3, 2], [2, 3]]            # Covarianza terza distribuzione
     ]
+   
+
+    # Inizializzazione e analisi
+    analyzer = GaussianMixtureAnalyzer()
     
+    # Generazione dati
+    data = analyzer.generate_multivariate_data(means, covs)
+     
