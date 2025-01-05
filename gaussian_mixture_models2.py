@@ -130,3 +130,12 @@ class GaussianMixtureAnalyzer:
     # Generazione dati
     data = analyzer.generate_multivariate_data(means, covs)
      
+
+
+    # Addestramento modello
+    analyzer.fit_gmm(data)
+    
+    # Punto di esempio per analisi
+    test_point = np.array([2, 2])
+    probabilities, cluster = analyzer.analyze_point(test_point)
+       
