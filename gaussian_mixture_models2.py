@@ -138,4 +138,8 @@ class GaussianMixtureAnalyzer:
     # Punto di esempio per analisi
     test_point = np.array([2, 2])
     probabilities, cluster = analyzer.analyze_point(test_point)
-       
+   
+    print(f"Probabilità di appartenenza per il punto {test_point}:")
+    print(probabilities)
+    print(f"Cluster predetto: {cluster}")
+    
