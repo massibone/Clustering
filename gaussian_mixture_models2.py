@@ -142,4 +142,9 @@ class GaussianMixtureAnalyzer:
     print(f"Probabilità di appartenenza per il punto {test_point}:")
     print(probabilities)
     print(f"Cluster predetto: {cluster}")
-    
+         
+    # Visualizzazione
+    analyzer.visualize_results()
+
+if __name__ == "__main__":
+    main()
