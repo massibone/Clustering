@@ -16,6 +16,7 @@ X[100:, :] -= 2
 n_clusters = 2
 sc = SpectralClustering(n_clusters=n_clusters, affinity='nearest_neighbors')
 labels = sc.fit_predict(X)
+
 # Visualizziamo i risultati
 plt.scatter(X[:, 0], X[:, 1], c=labels)
 plt.title("Clustering spettrale")
