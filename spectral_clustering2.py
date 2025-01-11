@@ -17,3 +17,4 @@ def generate_nonlinear_dataset(
     if random_state is not None:
         np.random.seed(random_state)
     
+X = np.random.rand(n_samples, n_features)
