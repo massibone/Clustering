@@ -18,3 +18,10 @@ def generate_nonlinear_dataset(
         np.random.seed(random_state)
     
 X = np.random.rand(n_samples, n_features)
+
+    
+    # Crea due cluster non lineari
+    X[:n_samples//2, :] += 2
+    X[n_samples//2:, :] -= 2
+    
+    return X
