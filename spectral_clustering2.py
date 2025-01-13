@@ -25,3 +25,13 @@ X = np.random.rand(n_samples, n_features)
     X[n_samples//2:, :] -= 2
     
     return X
+
+def perform_spectral_clustering(
+    X: np.ndarray, 
+    n_clusters: int = 2, 
+    affinity: str = 'nearest_neighbors',
+    n_neighbors: int = 10
+) -> np.ndarray:
+    """
+    Esegue il clustering spettrale.
+    """
