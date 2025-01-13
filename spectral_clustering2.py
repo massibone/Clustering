@@ -35,3 +35,7 @@ def perform_spectral_clustering(
     """
     Esegue il clustering spettrale.
     """
+
+    # Preprocessing: standardizzazione dei dati
+    X_scaled = StandardScaler().fit_transform(X)
+    
