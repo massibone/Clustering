@@ -49,3 +49,25 @@ def perform_spectral_clustering(
     # Preprocessing: standardizzazione dei dati
     X_scaled = StandardScaler().fit_transform(X)
     
+
+def plot_clustering_results(
+    X: np.ndarray, 
+    labels: np.ndarray,
+    title: str = "Clustering Spettrale"
+):
+    """
+    Visualizza i risultati del clustering.
+    """
+    plt.figure(figsize=(10, 6))
+    scatter = plt.scatter(
+        X[:, 0], X[:, 1], 
+        c=labels, 
+        cmap='viridis', 
+        marker='o'
+    )
+    plt.title(title)
+    plt.colorbar(scatter, label='Cluster')
+    plt.xlabel('Feature 1')
+    plt.ylabel('Feature 2')
+    plt.show()
+    
