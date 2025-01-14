@@ -36,6 +36,16 @@ def perform_spectral_clustering(
     Esegue il clustering spettrale.
     """
 
+
+    sc = SpectralClustering(
+        n_clusters=n_clusters, 
+        affinity=affinity,
+        n_neighbors=n_neighbors
+    )
+    
+    return sc.fit_predict(X_scaled)
+
+
     # Preprocessing: standardizzazione dei dati
     X_scaled = StandardScaler().fit_transform(X)
     
