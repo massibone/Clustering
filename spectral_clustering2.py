@@ -70,4 +70,15 @@ def plot_clustering_results(
     plt.xlabel('Feature 1')
     plt.ylabel('Feature 2')
     plt.show()
+ def evaluate_clustering(
+    X: np.ndarray, 
+    labels: np.ndarray
+) -> Tuple[float, float]:
+    """
+    Valuta la qualità del clustering.
+    """
+    silhouette = silhouette_score(X, labels)
+    calinski = calinski_harabasz_score(X, labels)
     
+    return silhouette, calinski
+ee   
