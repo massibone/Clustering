@@ -81,7 +81,7 @@ def plot_clustering_results(
     calinski = calinski_harabasz_score(X, labels)
     
     return silhouette, calinski
-ee   
+   
 def main():
     # Genera un dataset di esempio
     X = generate_nonlinear_dataset(
