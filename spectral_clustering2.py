@@ -82,3 +82,10 @@ def plot_clustering_results(
     
     return silhouette, calinski
 ee   
+def main():
+    # Genera un dataset di esempio
+    X = generate_nonlinear_dataset(
+        n_samples=200, 
+        n_features=2, 
+        random_state=42
+    )
