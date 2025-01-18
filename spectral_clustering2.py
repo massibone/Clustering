@@ -89,3 +89,12 @@ def main():
         n_features=2, 
         random_state=42
     )
+    
+    # Esegui il clustering spettrale
+    labels = perform_spectral_clustering(
+        X, 
+        n_clusters=2, 
+        affinity='nearest_neighbors',
+        n_neighbors=10
+    )
+    
