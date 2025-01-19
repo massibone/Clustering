@@ -105,4 +105,11 @@ def main():
         affinity='nearest_neighbors',
         n_neighbors=10
     )
-    
+  
+  print(f"Silhouette Score: {silhouette}")
+    print(f"Calinski-Harabasz Score: {calinski}")
+
+if __name__ == "__main__":
+    main()
+
+
