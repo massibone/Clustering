@@ -77,6 +77,14 @@ def plot_clustering_results(
     """
     Valuta la qualità del clustering.
     """
+
+
+    # Visualizza i risultati
+    plot_clustering_results(X, labels)
+    
+    # Valuta la qualità del clustering
+    silhouette, calinski = evaluate_clustering(X, labels)
+  
     silhouette = silhouette_score(X, labels)
     calinski = calinski_harabasz_score(X, labels)
     
