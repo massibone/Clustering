@@ -17,3 +17,8 @@ X[100:, :] -= 2
 n_clusters = 2
 fcm = FuzzyCMeans(n_clusters=n_clusters, m=2, error=0.005, maxiter=1000, init=None)
 fcm.fit(X)
+
+# Visualizziamo i risultati
+plt.scatter(X[:, 0], X[:, 1], c=fcm.u.argmax(axis=0))
+plt.title("Clustering fuzzy")
+plt.show()
