@@ -22,3 +22,8 @@ fcm.fit(X)
 plt.scatter(X[:, 0], X[:, 1], c=fcm.u.argmax(axis=0))
 plt.title("Clustering fuzzy")
 plt.show()
+
+# Visualizziamo la matrice di appartenenza
+plt.imshow(fcm.u, cmap='hot', interpolation='nearest')
+plt.title("Matrice di appartenenza")
+plt.show()
