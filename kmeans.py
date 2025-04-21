@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from typing import Tuple, List
 
+
 class KMeans:
     def __init__(self, n_clusters: int, max_iters: int = 100, random_state: int = None):
         """
