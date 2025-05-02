@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import linkage, dendrogram
 
+
 #copy data x1,x2 from clustering_python.ods
 x=np.array([[1.2,2.0],[1.5,1.8],[2.4,3.0],[5.8,8.1],[6.3,4.9],[8.6,7.5],[3.1,3.3]])
 #plt.scatter(x[:,0],x[:,1], s=50)
