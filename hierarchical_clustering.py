@@ -12,7 +12,6 @@ X, y = make_blobs(n_samples=10, centers=3, random_state=0, cluster_std=1.0)
 clustering = AgglomerativeClustering(n_clusters=3)
 clustering.fit(X)
 
-
 # Visualizza i risultati
 plt.scatter(X[:, 0], X[:, 1], c=clustering.labels_, cmap='viridis', marker='o')
 
