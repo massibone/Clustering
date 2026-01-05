@@ -9,3 +9,4 @@ Hierarchical clustering: Un metodo che crea una gerarchia di gruppi attraverso u
 DBSCAN: Un algoritmo basato sulla densità che identifica cluster di punti densamente popolati separati da aree di bassa densità.
 
 Il clustering è utile per l'identificazione di pattern nei dati, la segmentazione dei clienti, e molte altre applicazioni pratiche.
+
