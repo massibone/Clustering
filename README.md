@@ -6,7 +6,7 @@ Clustering raggruppa dati simili: minimizza distanza intra-cluster, massimizza i
 
 📁 File Principali
 | Script                                            | Algoritmo                   |
-| ------------------------------------------------- | --------------------------- | ---------- |
+| ------------------------------------------------- | --------------------------- |
 | kmeans.py / kmeans2.py                            | K-means (centroidi)         |  
 | hierarchical_clustering.py                        | Clustering gerarchico       |  
 | dbscan2.py                                        | DBSCAN (densità-based)      |  
